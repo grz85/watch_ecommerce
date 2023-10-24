@@ -92,7 +92,16 @@ h1 {
     font-size: 32px;
     font-weight: 400;
     line-height: 32px;
+    border: 2px solid #161515;
 }
+
+.main__btn:hover {
+    background: #ffffff;
+    color: #161515;
+    border: 2px solid #161515; 
+
+}
+
 
 .main__price {
     display: inline-block;
@@ -177,7 +186,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 80px;
+    margin: 120px 0 80px 0;
 }
 
 .footer_title {
@@ -187,7 +196,6 @@ footer {
     font-weight: 400;
     line-height: 186%;
     text-transform: capitalize;
-    margin-top: 160px;
 }
 
 .footer_title::after {
@@ -210,7 +218,8 @@ footer {
     font-size: 24px;
     font-weight: 300;
     line-height: 170%;
-    margin-top: 64px;
+    margin-top: 40px;
+
 }
 
 .footer_link {
@@ -221,7 +230,13 @@ footer {
     font-weight: 500;
     line-height: 170%;
     text-decoration-line: underline;
+
 }
+
+.footer_link:hover {
+    text-decoration-line: none;
+}
+
 
 @media screen and (max-width: 1200px) {
 
@@ -229,6 +244,7 @@ footer {
 
         gap: 80px;
     }
+
     .main__price {
         display: inline-block;
         padding: 24px 0 24px 24px;
@@ -298,10 +314,9 @@ footer {
     }
 
     footer {
-        margin: 0 16px;
-        margin-bottom: 40px;
+        margin: 80px 16px;
     }
-        
+
 
 }
 
@@ -331,5 +346,5 @@ footer {
 
     }
 
-    
+
 }
